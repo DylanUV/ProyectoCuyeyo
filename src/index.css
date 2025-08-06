@@ -319,7 +319,8 @@ nav {
   padding: 20px;
 
   transition: 300ms ease;
-  background: var(--nav-bg)
+  background: var(--nav-bg);
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 0px 3px;
 }
 
 .mini-container {
@@ -339,7 +340,7 @@ nav {
 
 nav:hover{
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.1) 5px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 7px 0px 7px;
 }
 
 main {
