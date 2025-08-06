@@ -1,9 +1,12 @@
-export default function Tarjetas({photo, content, cambio}){
-    return(
-        <div>
+export default function Tarjetas({ photo, content, cambio }) {
+  return (
+    <div className="miniatura">
+      <div className="imagen-contenedor">
+
         <img src={photo} />
-          <p>{content}</p>
-          <button onClick={cambio}>Cambiar Tema</button>
-        </div>
-    )
+      </div>
+      <p className="titulo-miniatura">{content}</p>
+      <button className="boton-miniatura" onClick={cambio}>Cambiar Tema</button>
+    </div>
+  )
 }

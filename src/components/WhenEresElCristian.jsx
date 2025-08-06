@@ -34,37 +34,44 @@ export default function WhenEresElCristian() {
       <input required name="end" type="text" placeholder="X maxima" />
       <input type="submit" />
       <span>Resultado: {result}</span>
-      <img src={imagen} alt=""></img>
 
-      <table id="runge-kutta-vals" border="1">
-        <thead>
-          <tr>
-            <th>X</th>
-            <th>Y</th>
-            <th>k1</th>
-            <th>k2</th>
-            <th>k3</th>
-            <th>k4</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data &&
-            data.k1.map((y, i) => (
+
+      <div style={{'display': 'flex'}}>
+        <img src={imagen} alt=""></img>
+        <div className="table">
+          <table id="runge-kutta-vals" border="1">
+            <thead>
               <tr>
-                <td>{data.xn[i].toFixed(4)}</td>
-                <td>{data.steps[i].toFixed(4)}</td>
-                <td>{data.k1[i].toFixed(4)}</td>
-                <td>{data.k2[i].toFixed(4)}</td>
-                <td>{data.k3[i].toFixed(4)}</td>
-                <td>{data.k4[i].toFixed(4)}</td>
+                <th>X</th>
+                <th>Y</th>
+                <th>k1</th>
+                <th>k2</th>
+                <th>k3</th>
+                <th>k4</th>
               </tr>
-            ))}
-            <tr>
-              <td>{data.xn[data.xn.length - 1].toFixed(4)}</td>
-              <td>{data.steps[data.xn.length - 1].toFixed(4)}</td>
-            </tr>
-        </tbody>
-      </table>
+            </thead>
+            <tbody>
+              {data &&
+                data.k1.map((y, i) => (
+                  <tr>
+                    <td>{data.xn[i].toFixed(4)}</td>
+                    <td><b>{data.steps[i].toFixed(4)}</b></td>
+                    <td>{data.k1[i].toFixed(4)}</td>
+                    <td>{data.k2[i].toFixed(4)}</td>
+                    <td>{data.k3[i].toFixed(4)}</td>
+                    <td>{data.k4[i].toFixed(4)}</td>
+                  </tr>
+                ))}
+              {data &&
+                <tr>
+                  <td>{data.xn[data.xn.length - 1].toFixed(4)}</td>
+                  <td><b>{data.steps[data.xn.length - 1].toFixed(4)}</b></td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
     </form>
   );
 }

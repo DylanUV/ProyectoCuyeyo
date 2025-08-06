@@ -1,6 +1,6 @@
 function Miniaturas({imagen, cambio}) {
     return(
-        <div>
+        <div class="mini">
             <img src={imagen} onClick={cambio}/>
         </div>
     )
