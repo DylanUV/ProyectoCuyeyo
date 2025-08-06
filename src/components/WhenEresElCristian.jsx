@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, } from "react";
 export default function WhenEresElCristian() {
   const [result, setResult] = useState(0);
   const [data, setData] = useState(null);
