@@ -339,6 +339,7 @@ nav {
 
 nav:hover{
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 0px 5px;
 }
 
 main {
