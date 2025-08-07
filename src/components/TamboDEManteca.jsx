@@ -18,7 +18,7 @@ export default function TamboDeManteca() {
                     "object-fit": "contain",
                   }}
                   src={`https://rotoplas.kaerdos.dev/thumbs/${el.Name}`}
-                  alt="sexo en el oxxo" />
+                  alt="aguanta paps esta cargando" />
               </a>
             );
           })

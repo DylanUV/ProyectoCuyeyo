@@ -360,8 +360,21 @@ main {
 .table {
   max-height: 300px;
   overflow: scroll;
+  margin: 20px;
+}
+
+td {
+  padding: 6px;
 }
 
 form {
 
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
